@@ -47,10 +47,9 @@ switch (process.env.NODE_ENV) {
         proxypath = 'http://localhost:8001';
         break;
     case 'online':
+        // proxypath = 'http://elm.cangdu.org';
         proxypath = 'http://m.data.eastmoney.com';
         break;
-    // case 'online': var proxypath = 'http://elm.cangdu.org';
-    // break;
 }
 
 var options = {

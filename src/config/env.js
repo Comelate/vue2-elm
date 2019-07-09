@@ -7,17 +7,15 @@
  *
  */
 
-let baseUrl = '';
+let baseUrl = '//m.data.eastmoney.com';
 let routerMode = 'hash';
 let imgBaseUrl = '';
 
-
-if (process.env.NODE_ENV === 'development') {
-    imgBaseUrl = '/img/';
-
-} else if (process.env.NODE_ENV === 'production') {
-    baseUrl = '//elm.cangdu.org';
+// 正式环境
+if (process.env.NODE_ENV === 'production') {
     imgBaseUrl = '//elm.cangdu.org/img/';
+} else if (process.env.NODE_ENV === 'development') {
+    imgBaseUrl = '/img/';
 }
 
 export {
